@@ -1,0 +1,43 @@
+{
+  "name": "mediconnect-api",
+  "version": "1.0.0",
+  "description": "A production-ready REST API for a telehealth platform that connects patients with licensed therapists. Supports appointment booking, real-time video consultations, and role-based access control.",
+  "main": "index.js",
+"scripts": {
+  "dev": "nodemon --exec ts-node src/app.ts",
+  "build": "tsc",
+  "start": "node dist/app.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsxcell/mediconnect-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsxcell/mediconnect-api/issues"
+  },
+  "homepage": "https://github.com/itsxcell/mediconnect-api#readme",
+  "dependencies": {
+    "agenda": "^6.2.5",
+    "agora-token": "^2.0.5",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.6.2",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

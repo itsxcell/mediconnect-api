@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "A production-ready REST API for a telehealth platform that connects patients with licensed therapists. Supports appointment booking, real-time video consultations, and role-based access control.",
   "main": "index.js",
-"scripts": {
-  "dev": "nodemon --exec ts-node src/app.ts",
-  "build": "tsc",
-  "start": "node dist/app.js"
-},
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/itsxcell/mediconnect-api.git"

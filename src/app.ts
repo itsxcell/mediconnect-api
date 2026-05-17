@@ -6,6 +6,7 @@ import authRoutes from './modules/auth/auth.routes'
 import therapistRoutes from './modules/therapist/therapist.routes'
 import appointmentRoutes from './modules/appointment/appointment.routes'
 import adminRoutes from './modules/admin/admin.routes'
+import sessionRoutes from './modules/session/session.routes'
 
 const app = express()
 
@@ -20,6 +21,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/therapists', therapistRoutes)
 app.use('/api/appointments', appointmentRoutes)
 app.use('/api/admin', adminRoutes)
+app.use('/api/sessions', sessionRoutes)
 
 const start = async () => {
   await connectDB()

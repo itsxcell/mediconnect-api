@@ -3,6 +3,7 @@ import cors from 'cors'
 import { env } from './config/env'
 import connectDB from './config/db'
 import authRoutes from './modules/auth/auth.routes'
+import therapistRoutes from './modules/therapist/therapist.routes'
 
 const app = express()
 
@@ -14,6 +15,7 @@ app.get('/health', (req, res) => {
 })
 
 app.use('/api/auth', authRoutes)
+app.use('/api/therapists', therapistRoutes)
 
 const start = async () => {
   await connectDB()

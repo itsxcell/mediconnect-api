@@ -6,6 +6,16 @@ A production-ready REST API for a telehealth platform that connects patients wit
 
 ---
 
+## Live API
+
+Base URL: `https://mediconnect-api-pggk.onrender.com`
+
+Test it right now:
+```bash
+curl https://mediconnect-api-pggk.onrender.com/health
+```
+
+---
 ## Features
 
 - **Auth & roles** — JWT-based authentication with separate flows for patients and therapists
